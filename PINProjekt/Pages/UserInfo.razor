@@ -1,0 +1,34 @@
+﻿@page "/UserInfo"
+@inherits UserInfoBE.UserInfoBE
+<h3>Podaci Korisnika</h3>
+
+<div class="row content">
+    <div class="col-md-2">
+        Ime
+    </div>
+    <div class="col-md-4">
+        <input class="form-control" @bind="UserInfo.Ime"/>
+    </div>
+</div>
+<div class="row content">
+    <div class="col-md-2">
+        Prezime
+    </div>
+    <div class="col-md-4">
+        <input class="form-control" @bind="UserInfo.Prezime"/>
+    </div>
+</div>
+<div class="row content">
+    <div class="col-md-2">
+        Nadimak
+    </div>
+    <div class="col-md-4">
+        <input class="form-control" @bind="UserInfo.Nadimak"/>
+    </div>
+</div>
+<div class="row content">
+    
+    <div class="col-md-4">
+        <input type="button" value="Save" @onclick="() => SpremiInfoKorisnika()" />
+    </div>
+</div>
